@@ -36,3 +36,13 @@ header{height:112px;padding:0 6vw;display:flex;align-items:center;justify-conten
 .modules-title{margin-top:24px!important}
 @media(max-width:760px){.result-card summary{grid-template-columns:8px 70px minmax(0,1fr) auto;gap:10px}.faculty-logo{width:70px;height:56px}.result-body{padding:18px}.career-links{grid-template-columns:1fr}}
 @media(max-width:480px){.result-card summary{grid-template-columns:7px 1fr auto}.faculty-logo{display:none}.unit-name{font-size:13px}.career-link{font-size:10.5px}}
+
+/* Logos y enlaces de las unidades académicas en inscripciones */
+.date-unit{display:flex;align-items:center;gap:14px;color:var(--ink);text-decoration:none}
+.date-logo{width:84px;height:58px;display:flex;align-items:center;justify-content:center;flex:0 0 auto;padding:8px;border:1px solid #e1dff1;border-radius:12px;background:#fff}
+.date-logo img{display:block;max-width:100%;max-height:42px;width:auto;height:auto;object-fit:contain}
+.date-unit h3{transition:.2s}
+.date-unit:hover h3{color:var(--accent)}
+.date-site-link{display:inline-flex;align-items:center;gap:7px;width:max-content;margin-top:18px;color:var(--accent);font-size:11px;font-weight:800;text-decoration:none}
+.date-site-link:hover{text-decoration:underline}
+@media(max-width:480px){.date-unit{align-items:flex-start;flex-direction:column}.date-logo{width:100%;justify-content:flex-start}.date-logo img{max-width:145px}}

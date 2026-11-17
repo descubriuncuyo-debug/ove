@@ -845,6 +845,8 @@
   "dates": [
     {
       "unit": "Facultad de Derecho",
+      "logo": "assets/derecho.png",
+      "site": "https://derecho.uncuyo.edu.ar",
       "periods": [
         "Modalidad extensiva: febrero",
         "Modalidad intensiva: septiembre",
@@ -853,6 +855,8 @@
     },
     {
       "unit": "Facultad de Ingeniería",
+      "logo": "assets/ingenieria.png",
+      "site": "https://ingenieria.uncuyo.edu.ar",
       "periods": [
         "Primera instancia: mayo",
         "Segunda instancia: julio",
@@ -861,6 +865,8 @@
     },
     {
       "unit": "Facultad de Ciencias Aplicadas a la Industria (San Rafael)",
+      "logo": "assets/fcai.png",
+      "site": "https://fcai.uncuyo.edu.ar",
       "periods": [
         "Primera instancia: junio",
         "Segunda instancia: febrero del año siguiente"
@@ -868,6 +874,8 @@
     },
     {
       "unit": "Facultad de Ciencias Económicas",
+      "logo": "assets/economicas.png",
+      "site": "https://fce.uncuyo.edu.ar",
       "periods": [
         "Modalidad extensiva: junio y julio",
         "Modalidad intensiva: septiembre",
@@ -876,30 +884,40 @@
     },
     {
       "unit": "Facultad de Ciencias Médicas",
+      "logo": "assets/medicas.png",
+      "site": "https://fcm.uncuyo.edu.ar",
       "periods": [
         "Inscripción única: junio y julio"
       ]
     },
     {
       "unit": "Facultad de Odontología",
+      "logo": "assets/odontologia.png",
+      "site": "https://www.fodonto.uncuyo.edu.ar",
       "periods": [
         "Inscripción única: agosto"
       ]
     },
     {
       "unit": "Instituto Universitario de Seguridad Pública (IUSP)",
+      "logo": "assets/iusp.png",
+      "site": "https://iusp.uncuyo.edu.ar",
       "periods": [
         "Tecnicaturas en Seguridad Pública y Penitenciaria: agosto"
       ]
     },
     {
       "unit": "Facultad de Educación",
+      "logo": "assets/educacion.png",
+      "site": "https://educacion.uncuyo.edu.ar",
       "periods": [
         "Inscripción única: agosto y septiembre"
       ]
     },
     {
       "unit": "Facultad de Ciencias Políticas y Sociales",
+      "logo": "assets/politicas.png",
+      "site": "https://fcp.uncuyo.edu.ar",
       "periods": [
         "Inscripción única: septiembre y octubre",
         "Carrera TUPA: septiembre y octubre"
@@ -907,6 +925,8 @@
     },
     {
       "unit": "Facultad de Ciencias Exactas y Naturales",
+      "logo": "assets/fcen.png",
+      "site": "https://fcen.uncuyo.edu.ar",
       "periods": [
         "Ingreso al segundo semestre: julio",
         "Ingreso al primer semestre del año siguiente: febrero y marzo"
@@ -914,6 +934,8 @@
     },
     {
       "unit": "Facultad de Ciencias Agrarias",
+      "logo": "assets/fca.png",
+      "site": "https://fca.uncuyo.edu.ar",
       "periods": [
         "Primera instancia: agosto y septiembre",
         "Segunda instancia: octubre y noviembre"
@@ -921,12 +943,16 @@
     },
     {
       "unit": "Facultad de Filosofía y Letras",
+      "logo": "assets/filosofia.png",
+      "site": "https://ffyl.uncuyo.edu.ar",
       "periods": [
         "Inscripción: septiembre, octubre y noviembre"
       ]
     },
     {
       "unit": "Facultad de Artes y Diseño",
+      "logo": "assets/fad.png",
+      "site": "https://fad.uncuyo.edu.ar",
       "periods": [
         "Inscripción: septiembre y octubre"
       ]
