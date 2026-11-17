@@ -1,63 +1,20 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#07594f">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f0eeff">
   <meta name="description" content="Guía interactiva sobre el ingreso a la UNCUYO para equipos de orientación.">
-  <title>Ingreso UNCUYO · Guía para orientadores</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Ingreso a la UNCUYO · Guía para orientadores</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="hero">
-    <nav class="topbar" aria-label="Navegación principal">
-      <a class="brand" href="#inicio" aria-label="Ir al inicio"><span class="brand-mark">U</span><span>Ingreso UNCUYO</span></a>
-      <div class="nav-links">
-        <a href="#etapas">Etapas</a><a href="#carreras">Carreras</a><a href="#inscripciones">Inscripciones</a>
-      </div>
-    </nav>
-    <div class="hero-content" id="inicio">
-      <p class="eyebrow">Guía interactiva para equipos de orientación</p>
-      <h1>¿Cómo es el ingreso<br>a la Universidad?</h1>
-      <p class="hero-copy">Una herramienta para explicar las etapas del ingreso, consultar los módulos de nivelación y revisar los períodos de inscripción de cada unidad académica.</p>
-      <a class="primary-button" href="#carreras">Buscar una carrera <span aria-hidden="true">↓</span></a>
-    </div>
-    <div class="hero-stat" aria-label="Resumen del contenido"><strong id="unitCount">—</strong><span>unidades académicas<br>en una sola consulta</span></div>
-  </header>
-
+  <header><button class="header-logo" id="homeButton" type="button" aria-label="Volver al inicio"><img src="assets/descubri-puente.svg" alt="Descubrí UNCUYO, tu puente a la Universidad"></button><a class="official-button" href="https://www.uncuyo.edu.ar/ingreso/" target="_blank" rel="noopener">Sitio oficial</a></header>
   <main>
-    <section class="section intro" id="etapas">
-      <div class="section-heading">
-        <div><p class="kicker">Un recorrido acompañado</p><h2>Tres etapas para comenzar</h2></div>
-        <p>El ingreso contempla instancias que acompañan el paso de la escuela secundaria a la vida universitaria.</p>
-      </div>
-      <div class="stage-grid" id="stageGrid"></div>
-    </section>
-
-    <section class="section finder" id="carreras">
-      <div class="section-heading light">
-        <div><p class="kicker">Cursos de nivelación</p><h2>Encontrá la información que necesitás</h2></div>
-        <p>Buscá por carrera, facultad o módulo. También podés acotar los resultados por área de conocimiento.</p>
-      </div>
-      <div class="search-panel">
-        <label class="search-box"><span aria-hidden="true">⌕</span><span class="sr-only">Buscar</span><input id="searchInput" type="search" placeholder="Ej.: Sociología, Matemática, Ingeniería…" autocomplete="off"></label>
-        <div class="filters" id="areaFilters" aria-label="Filtrar por área"></div>
-        <div class="results-meta"><strong id="resultCount">0 resultados</strong><button id="clearButton" type="button">Limpiar búsqueda</button></div>
-        <div class="result-list" id="resultList" aria-live="polite"></div>
-      </div>
-    </section>
-
-    <section class="section dates" id="inscripciones">
-      <div class="section-heading">
-        <div><p class="kicker">Calendario de ingreso</p><h2>Períodos de inscripción</h2></div>
-        <p>Consultá las fechas informadas para cada facultad o institución. Verificá siempre las novedades en los canales oficiales.</p>
-      </div>
-      <label class="date-search"><span aria-hidden="true">⌕</span><input id="dateSearch" type="search" placeholder="Buscar una facultad o institución"></label>
-      <div class="date-grid" id="dateGrid"></div>
-    </section>
+    <section class="hero"><div class="eyebrow">GUÍA PARA EQUIPOS DE ORIENTACIÓN</div><h1>¿Cómo es el ingreso a la UNCUYO?</h1><p class="lead">Un recorrido para conocer las etapas del ingreso, los módulos de nivelación de cada carrera y los períodos de inscripción.</p><nav class="steps" aria-label="Secciones de la guía"><button class="step current" data-view="stages" type="button"><span>1</span>Etapas</button><i class="step-line"></i><button class="step" data-view="programs" type="button"><span>2</span>Nivelación</button><i class="step-line"></i><button class="step" data-view="dates" type="button"><span>3</span>Inscripciones</button></nav></section>
+    <section class="view visible" id="stagesView"><div class="view-inner"><div class="view-head"><div><div class="eyebrow">EL RECORRIDO DE INGRESO</div><h2>Tres etapas para comenzar</h2></div><p>Para todas las carreras, el ingreso incluye tres instancias que acompañan el paso de la escuela secundaria a la vida universitaria.</p></div><div class="stage-grid" id="stageGrid"></div><div class="next-wrap"><button class="primary-button" data-go="programs" type="button">Consultar cursos de nivelación <span>→</span></button></div></div></section>
+    <section class="view" id="programsView"><div class="view-inner"><button class="back" data-go="stages" type="button">Volver a las etapas</button><div class="view-head"><div><div class="eyebrow">CURSOS DE NIVELACIÓN</div><h2>¿Qué carrera querés consultar?</h2></div><p>Buscá una carrera, facultad o módulo y filtrá los resultados por familia de conocimiento.</p></div><label class="search-box"><span aria-hidden="true">⌕</span><span class="sr-only">Buscar carrera, facultad o módulo</span><input id="searchInput" type="search" placeholder="Ej.: Sociología, Matemática, Ingeniería…" autocomplete="off"></label><div class="family-filters" id="areaFilters" aria-label="Filtrar por familia de conocimiento"></div><div class="results-meta"><strong id="resultCount">0 resultados</strong><button id="clearButton" type="button">Limpiar búsqueda</button></div><div class="result-list" id="resultList" aria-live="polite"></div><div class="next-wrap"><button class="primary-button" data-go="dates" type="button">Ver períodos de inscripción <span>→</span></button></div></div></section>
+    <section class="view" id="datesView"><div class="view-inner"><button class="back" data-go="programs" type="button">Volver a nivelación</button><div class="view-head"><div><div class="eyebrow">CALENDARIO DE INGRESO</div><h2>¿Cuándo puedo inscribirme?</h2></div><p>Consultá los períodos informados para cada facultad o institución. Verificá las novedades en sus canales oficiales.</p></div><label class="search-box date-search"><span aria-hidden="true">⌕</span><span class="sr-only">Buscar facultad</span><input id="dateSearch" type="search" placeholder="Buscar una facultad o institución"></label><div class="date-grid" id="dateGrid"></div></div></section>
   </main>
-
-  <footer><div><strong>Ingreso UNCUYO</strong><p>Herramienta de apoyo para el trabajo con orientadores.</p></div><a href="#inicio">Volver arriba ↑</a></footer>
+  <footer class="site-footer"><strong>Descubrí UNCUYO</strong><p>Herramienta de apoyo para el trabajo con equipos de orientación.</p><div class="footer-links"><a class="footer-link" href="https://www.instagram.com/descubriuncuyo/" target="_blank" rel="noopener" aria-label="Instagram de Descubrí UNCUYO"><img src="assets/instagram-descubri-agosto2026.png" alt="Instagram"></a><a class="footer-link" href="https://whatsapp.com/channel/0029VbA5YJZIXnlqf9kzAL3D" target="_blank" rel="noopener" aria-label="Canal de WhatsApp de Descubrí UNCUYO"><img src="assets/whatsapp-descubri-agosto2026.png" alt="WhatsApp"></a></div></footer>
   <script src="app.js"></script>
-</body>
-</html>
+</body></html>
